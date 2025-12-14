@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.20), transparent 60%);
+    mix-blend-mode: soft-light;
+    backdrop-filter: blur(2px);
+    z-index: -1;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+#login-form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 430px;
+    margin-bottom: 2rem;
+}
+
+#login-form input {
+    flex: 1;
+    padding: 0.75rem 1.2rem;
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 999px;
+    backdrop-filter: blur(7px);
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+#login-form button {
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(9px);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clock {
+    font-family: "Orbitron", sans-serif;
+    font-size: 70px;
+}
+
+#date {
+    font-size: 20px;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#todo-form {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+    unicode-bidi: isolate;
+}
+
+#todo-form input {
+    font-size: 20px;
+    color: white;
+    border-top-width: initial;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    border-style: none none solid;
+    border-image: initial;
+    text-align: center;
+    width: 440px;
+    padding: 12px 25px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    background: transparent;
+    outline: none;
+}
+
+#todo-list {
+    list-style: none;
+    width: 100%;
+    max-width: 420px;
+    padding: 0;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+}
+
+#todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.55rem 0.9rem 0.55rem 1rem;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 0.95rem;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+#weather-container {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.40);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-size: 0.8rem;
+    backdrop-filter: blur(8px);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.bg-area {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
